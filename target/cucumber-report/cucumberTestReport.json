@@ -1,0 +1,137 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-30T23:26:01.966Z",
+        "line": 4,
+        "name": "Verify Home Page Title",
+        "description": "",
+        "id": "home-page-test;verify-home-page-title",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12300305394,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open Home Page",
+            "match": {
+              "location": "HomePage_STEPS.user_open_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177927048,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks \"Java Basics Button\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Java Basics Button\"",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePage_STEPS.user_clicks(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1649081,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click \"Java OOps\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Java OOps\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1601067,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User sees pop up",
+            "match": {
+              "location": "HomePage_STEPS.user_sees_pop_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1560789,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click \"Close pop up\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Close pop up\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1591048,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User verify the \"Java OOPS, Inheritance, Abstract Class, Interface,Polymorphism\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Java OOPS, Inheritance, Abstract Class, Interface,Polymorphism\"",
+                  "offset": 16
+                }
+              ],
+              "location": "HomePage_STEPS.user_verify_the(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@homePage"
+          },
+          {
+            "name": "@verifyHomeTitle"
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Test",
+    "description": "",
+    "id": "home-page-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
+    "tags": [
+      {
+        "name": "@homePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
