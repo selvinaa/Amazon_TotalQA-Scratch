@@ -1,30 +1,42 @@
 package stepDefinitionsImpl;
 
 import io.cucumber.java.eo.Se;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
 import pages.HomePage;
+import pages.TourHomePage;
+import testData.NewUserInfo;
 import utils.Driver;
 import utils.SeleniumUtils;
 
-import java.util.Iterator;
-import java.util.Set;
-
-public class HomePage_impl {
+public class TourHomePage_impl {
     private static WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
-    // ALL METHODS GOST HERE
+    TourHomePage tourHomePage = new TourHomePage();
+    NewUserInfo newUserInfo = new NewUserInfo();
+    // ALL METHODS GOes HERE
 
 
-    public void clickHomePage(){
-       SeleniumUtils.click(homePage.first_Feature_Tour);
+    public void clickTourHomePage() {
+        SeleniumUtils.click(tourHomePage.packages_btn);
+        SeleniumUtils.click(tourHomePage.third_package_Tour);
+    }
+
+    public void clickPackageBooking() {
+        SeleniumUtils.sleep(500);
+        SeleniumUtils.sendKeys(tourHomePage.firstName_TourBox, newUserInfo.getFirstName());
+        SeleniumUtils.sendKeys(tourHomePage.email_TourBox, newUserInfo.getEmail());
+        SeleniumUtils.sendKeys(tourHomePage.phone_TourBox, newUserInfo.getCellPhoneNum());
+        SeleniumUtils.sendKeys(tourHomePage.address_TourBox, newUserInfo.getAddress());
+        SeleniumUtils.sleep(800);
+        SeleniumUtils.click(tourHomePage.submit_Btn_TourBox);
 
 
-//        String mainWindow=driver.getWindowHandle();
+    }
+
+}
+
+
+    //        String mainWindow=driver.getWindowHandle();
 //        // It returns no. of windows opened by WebDriver and will return Set of Strings
 //        Set<String> set =driver.getWindowHandles();
 //        // Using Iterator to iterate with in windows
@@ -37,8 +49,7 @@ public class HomePage_impl {
 //             //   System.out.println(driver.switchTo().window(childWindow).getTitle());
 //                //SeleniumUtils.sleep(2000);
 //                driver.close();
-            }
-        }
+//}
         // This is to switch to the main window
        // driver.switchTo().window(mainWindow);
 //        WebElement windowSwitch = driver.findElement(By.className("google_ads_frame19"));
@@ -46,8 +57,6 @@ public class HomePage_impl {
 //            SeleniumUtils.click(homePage.popUp_Iframe);
 //        }
 //          driver.switchTo().parentFrame();
-
-
 
     //}
 

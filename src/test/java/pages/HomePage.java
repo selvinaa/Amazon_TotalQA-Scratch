@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,8 +15,9 @@ public class HomePage {
 
     }
 
-    @FindBy(xpath = "(//a[text()='Java Basics'])[2]")
-    public WebElement javaOops_Btn;
+    @FindBy(xpath = "//a[@class='position-absolute-href']")
+    public WebElement first_Feature_Tour;
+
 
 
 }

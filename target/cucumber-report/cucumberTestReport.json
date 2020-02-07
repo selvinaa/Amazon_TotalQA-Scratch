@@ -3,8 +3,8 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-30T23:26:01.966Z",
-        "line": 4,
+        "start_timestamp": "2020-02-07T17:17:23.995Z",
+        "line": 3,
         "name": "Verify Home Page Title",
         "description": "",
         "id": "home-page-test;verify-home-page-title",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 12300305394,
+              "duration": 29124598959,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "User open Home Page",
             "match": {
               "location": "HomePage_STEPS.user_open_Home_Page()"
@@ -25,95 +25,104 @@
           },
           {
             "result": {
-              "duration": 177927048,
+              "duration": 9227740071,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sees \"packages \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"packages \"",
+                  "offset": 10
+                }
+              ],
+              "location": "HomePage_STEPS.user_sees(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7282466598,
               "status": "passed"
             },
             "line": 6,
-            "name": "User clicks \"Java Basics Button\"",
+            "name": "User clicks \"Third Trip\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Java Basics Button\"",
+                  "val": "\"Third Trip\"",
                   "offset": 12
                 }
               ],
-              "location": "HomePage_STEPS.user_clicks(String)"
+              "location": "TourHomePage_STEPS.user_clicks(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1649081,
+              "duration": 57321283,
               "status": "passed"
             },
             "line": 7,
-            "name": "User click \"Java OOps\"",
+            "name": "User Verify \"Tour page Title\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Java OOps\"",
-                  "offset": 11
+                  "val": "\"Tour page Title\"",
+                  "offset": 12
                 }
               ],
-              "location": "HomePage_STEPS.user_click(String)"
+              "location": "TourHomePage_STEPS.user_Verify(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1601067,
+              "duration": 2038149675,
               "status": "passed"
             },
             "line": 8,
-            "name": "User sees pop up",
-            "match": {
-              "location": "HomePage_STEPS.user_sees_pop_up()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1560789,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User click \"Close pop up\"",
+            "name": "User sees pop up window \"Packages Booking\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Close pop up\"",
-                  "offset": 11
+                  "val": "\"Packages Booking\"",
+                  "offset": 24
                 }
               ],
-              "location": "HomePage_STEPS.user_click(String)"
+              "location": "TourHomePage_STEPS.user_sees_pop_up_window(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1591048,
+              "duration": 7254759006,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User fills out information",
+            "match": {
+              "location": "TourHomePage_STEPS.user_fills_out_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623084,
               "status": "passed"
             },
             "line": 10,
-            "name": "User verify the \"Java OOPS, Inheritance, Abstract Class, Interface,Polymorphism\"",
+            "name": "User clicks Search Button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Java OOPS, Inheritance, Abstract Class, Interface,Polymorphism\"",
-                  "offset": 16
-                }
-              ],
-              "location": "HomePage_STEPS.user_verify_the(String)"
+              "location": "TourHomePage_STEPS.user_clicks_Search_Button()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@homePage"
-          },
-          {
-            "name": "@verifyHomeTitle"
+            "name": "@tourHomePage"
           }
         ]
       }
@@ -122,10 +131,10 @@
     "description": "",
     "id": "home-page-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/homePage.feature",
+    "uri": "file:src/test/resources/features/TourhomePage.feature",
     "tags": [
       {
-        "name": "@homePage",
+        "name": "@tourHomePage",
         "type": "Tag",
         "location": {
           "line": 1,

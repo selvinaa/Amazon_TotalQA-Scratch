@@ -15,6 +15,15 @@ public class NewUserInfo {
     private static String cellPhoneNum;
     private static String email;
     private static String password;
+    private static String address;
+
+    public static String getAddress() {
+        return address;
+    }
+
+    public static void setAddress(String address) {
+        NewUserInfo.address = address;
+    }
 
     Faker faker = new Faker(new Locale("en-US"));
 
@@ -65,5 +74,6 @@ public class NewUserInfo {
         setFirstName(faker.name().firstName());
         setPassword(getFirstName() + getLastName() + "123#");
         setEmail(getFirstName() + "." + getLastName() + "@zzz.com");
+        setAddress(faker.address().streetAddress());
     }
 }

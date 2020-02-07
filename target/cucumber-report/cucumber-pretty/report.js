@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/homePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/TourhomePage.feature");
 formatter.feature({
   "name": "Home Page Test",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@homePage"
+      "name": "@tourHomePage"
     }
   ]
 });
@@ -15,10 +15,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@homePage"
-    },
-    {
-      "name": "@verifyHomeTitle"
+      "name": "@tourHomePage"
     }
   ]
 });
@@ -33,51 +30,61 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks \"Java Basics Button\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "HomePage_STEPS.user_clicks(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click \"Java OOps\"",
+  "name": "User sees \"packages \"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "HomePage_STEPS.user_click(String)"
+  "location": "HomePage_STEPS.user_sees(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User sees pop up",
+  "name": "User clicks \"Third Trip\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "HomePage_STEPS.user_sees_pop_up()"
+  "location": "TourHomePage_STEPS.user_clicks(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click \"Close pop up\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "HomePage_STEPS.user_click(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User verify the \"Java OOPS, Inheritance, Abstract Class, Interface,Polymorphism\"",
+  "name": "User Verify \"Tour page Title\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "HomePage_STEPS.user_verify_the(String)"
+  "location": "TourHomePage_STEPS.user_Verify(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User sees pop up window \"Packages Booking\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "TourHomePage_STEPS.user_sees_pop_up_window(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out information",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "TourHomePage_STEPS.user_fills_out_information()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks Search Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "TourHomePage_STEPS.user_clicks_Search_Button()"
 });
 formatter.result({
   "status": "passed"
